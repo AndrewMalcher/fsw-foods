@@ -1,1 +1,2 @@
-const name = "page";
+const nome = "page";
+console.log(nome);
