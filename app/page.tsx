@@ -1,3 +1,7 @@
-const nome = "page";
-console.log(nome);
-console.log("page");
+import Header from "./_components/header";
+
+const Home = () => {
+  return <Header />;
+};
+
+export default Home;
