@@ -1,7 +1,15 @@
+import { Search } from "lucide-react";
 import Header from "./_components/header";
 
 const Home = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <div className="px-5 pt-6">
+        <Search />
+      </div>
+    </>
+  );
 };
 
 export default Home;
