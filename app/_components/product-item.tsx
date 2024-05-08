@@ -1,4 +1,4 @@
-import { Prisma, Product } from "@prisma/client";
+import { Prisma } from "@prisma/client";
 import Image from "next/image";
 import { calculateProductTotalPrice, formatCurrency } from "../_helpers/price";
 import { ArrowDownIcon } from "lucide-react";
@@ -50,7 +50,9 @@ const ProductItem = ({ product }: ProductItemProps) => {
             </span>
           )}
         </div>
-        <span>{product.restaurant.name}</span>
+        <span className="block text-xs text-muted-foreground">
+          {product.restaurant.name}
+        </span>
       </div>
     </div>
   );
