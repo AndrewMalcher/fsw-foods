@@ -12,6 +12,7 @@ const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
   return (
     <div className="min-w-[266px] max-w-[266px] space-y-3 ">
       {/* IMAGEM */}
+
       <div className="relative h-[136px] w-full">
         <Image
           src={restaurant.imageUrl}
@@ -52,9 +53,7 @@ const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
           <div className="flex items-center gap-1">
             <TimerIcon size={14} className="text-primary" />
             <span className="text-xs text-muted-foreground">
-              {Number(restaurant.deliveryFee) === 0
-                ? "Entrega grátis"
-                : formatCurrency(Number(restaurant.deliveryFee))}
+              {restaurant.deliveryTimeMinutes} min
             </span>
           </div>
         </div>
